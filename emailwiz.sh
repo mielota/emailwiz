@@ -305,10 +305,9 @@ sieve_script personal {
 }
 
 sieve_script default {
-  type = default
-  name = default
-  driver = file
-  path = /var/lib/dovecot/sieve/
+    type = default
+    driver = file
+    path = /var/lib/dovecot/sieve/default.sieve
 }
 
 sieve_script global {
