@@ -242,6 +242,9 @@ passdb pam {
   driver = pam
 }
 
+# Our mail for each user will be in ~/Mail, and the inbox will be ~/Mail/Inbox
+# The LAYOUT option is also important because otherwise, the boxes will be \`.Sent\` instead of \`Sent\`.
+mailbox_list_layout = fs
 mail_driver = maildir
 mail_path = ~/Mail
 mail_inbox_path = ~/Mail/Inbox
